@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <STORELIST>
-<store name='西安民生百货-解放店'>
-	<add>西安市解放路103号民生2楼JY21专柜</add>
-	<tel>029-87481905</tel>
-	<lat>34.263915914326944</lat>
-	<lng>108.96358586847782</lng>
+<store name='包头神华亿佰购物中心' attr='opening soon'>
+	<add>包头昆区神华亿佰蓝天购物中心北门1楼JY21专柜</add>
+	<lat>40.65268639319699</lat>
+	<lng>109.8409133026075</lng>
 </store>
-<store name='西安民生百货-国际店'>
-	<add>西安市莲湖区北大街民生国际28号2楼JY21专柜</add>
-	<tel>029-63395294</tel>
-	<lat>34.267437931205976</lat>
-	<lng>108.94721299409866</lng>
+<store name='常州购物中心' attr='opening soon'>
+	<add>常州市延陵西路1号 常州购物中心2楼JY21专柜</add>
+	<lat>31.774224276816998</lat>
+	<lng>119.96358227061663</lng>
 </store>
 <store name='成都仁和 - 棕北店'>
 	<add>成都市人民南路4段友谊路2号仁和春天百货3楼JY21专柜</add>
@@ -24,6 +22,12 @@
 	<lat>30.658249</lat>
 	<lng>104.070838</lng>
 </store>
+<store name='东莞海雅百货东城店' attr='opening soon'>
+	<add>东莞市东城区东城中路世博广场A区东莞东城海雅2楼JY21专柜</add>
+	<tel>0769-22031517</tel>
+	<lat>23.03114481513866</lat>
+	<lng>113.77709090709686</lng>
+</store>
 <store name='济南银座 - 玉函店' attr='opening soon'>
 	<add>济南市经十路19288号银座玉函店仕女商场三楼JY21专柜</add>
 	<tel>0531-67718571</tel>
@@ -36,11 +40,10 @@
 	<lat>36.659974966229136</lat>
 	<lng>117.02932398766279</lng>
 </store>
-<store name='东莞海雅百货东城店' attr='opening soon'>
-	<add>东莞市东城区东城中路世博广场A区东莞东城海雅2楼JY21专柜</add>
-	<tel>0769-22031517</tel>
-	<lat>23.03114481513866</lat>
-	<lng>113.77709090709686</lng>
+<store name='天津友谊名都店' attr='opening soon'>
+	<add>天津市经济开发区黄海路19号2楼</add>
+	<lat>39.02683901308191</lat>
+	<lng>117.68653895705938</lng>
 </store>
 <store name='深圳深国投广场店' attr='opening soon'>
 	<add>深圳市福田区农林路69号深国投广场1楼JY21专柜</add>
@@ -54,20 +57,17 @@
 	<lat>31.57189973137252</lat>
 	<lng>120.30277434704476</lng>
 </store>
-<store name='天津友谊名都店' attr='opening soon'>
-	<add>天津市经济开发区黄海路19号2楼</add>
-	<lat>39.02683901308191</lat>
-	<lng>117.68653895705938</lng>
+<store name='西安民生百货-解放店'>
+	<add>西安市解放路103号民生2楼JY21专柜</add>
+	<tel>029-87481905</tel>
+	<lat>34.263915914326944</lat>
+	<lng>108.96358586847782</lng>
 </store>
-<store name='包头神华亿佰购物中心' attr='opening soon'>
-	<add>包头昆区神华亿佰蓝天购物中心北门1楼JY21专柜</add>
-	<lat>40.65268639319699</lat>
-	<lng>109.8409133026075</lng>
-</store>
-<store name='常州购物中心' attr='opening soon'>
-	<add>常州市延陵西路1号 常州购物中心2楼JY21专柜</add>
-	<lat>31.774224276816998</lat>
-	<lng>119.96358227061663</lng>
+<store name='西安民生百货-国际店'>
+	<add>西安市莲湖区北大街民生国际28号2楼JY21专柜</add>
+	<tel>029-63395294</tel>
+	<lat>34.267437931205976</lat>
+	<lng>108.94721299409866</lng>
 </store>
 <store name='西安金鹰高新店' attr='opening soon'>
 	<add>陕西省西安市科技路37号海星城市广场金鹰高新店2楼JY21专柜</add>
