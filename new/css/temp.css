@@ -1,0 +1,84 @@
+body {overflow:auto; height:100%; padding: 0; margin: 0; font-family: "微软雅黑","Microsoft YaHei"; font-size: 12px;}
+li {
+	list-style: none;
+}
+#skrollr-body {width:100%; height:100%; position:fixed;}
+.centered { top:0; bottom:0; left:0; right:0; margin:auto; overflow:hidden; position:absolute;}
+
+#cover {background: url('background.jpg') repeat; z-index:6; height: 763px; margin: 0 auto; position: relative;}
+
+#cover .top-line {background: url(line-top.png) no-repeat; height: 20px; width: 1331px; margin: 40px auto; position: relative;}
+#cover .bottom-line {background: url(line-top.png) no-repeat; height: 20px; width: 1331px; margin: 40px auto; position: relative;}
+#cover .mini-icon {background: url(mini-icon.png) no-repeat; width: 20px; height: 22px; position: relative; left: 654px; top: -8px;}
+#cover #canvas {width: 96px; height: 96px; margin: 0 auto;}
+#cover .init-hide {opacity:0;}
+
+
+#cover .text-bg {background: url(text.png) no-repeat;}
+#cover .anim1 {background-position: 0 0; width: 200px; height: 50px; margin: 10px auto;}
+#cover .anim2 {background-position: 0 -50px; width: 640px; height: 70px; margin: 10px auto;}
+#cover .anim3 {background-position: 0 -150px; width: 500px; height: 115px; margin: 0 auto;}
+#cover .anim4 {width: 200px; height: 0; margin: 0 auto;}
+#cover .anim5 {background-position: 0 -330px; width: 500px; height: 115px; margin: 0 auto;}
+
+#page-one {background: url('background_1.jpg') repeat; z-index:3; height: 1200px; width: 100%; margin: 0 auto;}
+#page-one .page-one-bg {background: url('page-one-bg.png') repeat-x; top: 120px;}
+#page-one .model {background-image: url(model.png); width: 300px; height: 800px; margin: 0 auto; position: relative; top: -50px;}
+#page-two {background: url('background1.jpg') no-repeat; z-index:4; height: 1200px; width: 100%; margin: 0 auto;}
+
+.main_frame {
+	background: url(bg.jpg);
+	z-index: 5;
+}
+.navi {
+	position: absolute;
+	width: 190px;
+	background: url('navi-bg.png');
+	top: 0;
+	bottom: 0;
+	color: #333;
+	z-index: 10;
+}
+.navi ul {padding: 0; width: 160px; margin-left: 15px;}
+.navi ul li {padding: 0; margin: 5px 0; border-bottom: 2px solid #999; height: 50px;}
+.navi ul li.logo {background: url(logo.png) no-repeat; width: 160px; height: 80px; border: none; padding-bottom: 15px;}
+.navi ul li a {display: block; width: 100%; height: 100%; text-decoration: none; color: #777;}
+.navi ul li a div.main {padding: 5px 0 0 5px; font-size: 14px; font-weight: bold;}
+.navi ul li a div.sub {padding: 2px 0 0 5px; font-size: 12px; font-family: "Helvetica"}
+.navi ul li a:hover {color: #555;}
+.navi ul li a:hover div.main {padding-left: 10px;}
+.navi ul li.logo a {opacity: 0; filter: alpha(opacity=0);}
+
+.navi-bottom {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+    position: fixed;
+    top: auto;
+	height: 25px;
+	background: black;
+	color: #ccc;
+	z-index: 10;
+	padding: 0;
+	margin: 0;
+}
+.navi-bottom ul {
+	padding: 4px 0 0 0;
+	margin: 0 auto;
+	overflow: auto;
+	width: 800px;
+}
+.navi-bottom ul li {float: left; list-style: none; margin: 0 15px;}
+
+.slogen {
+	position: absolute;
+	top: 200px;
+	right: 100px;
+}
+.slogen a{
+	display: block;
+}
+
+.lightbox {
+
+}
