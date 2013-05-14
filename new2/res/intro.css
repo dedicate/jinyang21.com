@@ -1,0 +1,18 @@
+.bg-wrapper {display: none;}
+#light {cursor: pointer;}
+#light .light-object {background: url('light.jpg') no-repeat 0 0; width: 450px; height: 450px; margin: 0px auto; position: relative;}
+#light .logo-gold-bg {background: #ffffff; height: 47px; margin-top: 25px;}
+#light .logo-gold {background: url('logo-gold.png') 0 0 no-repeat; width: 120px; height: 47px; margin: 0 auto;}
+
+#card{ display: none; position: relative; top: 80px;}
+
+#card .card-paper{background: url('card-paper.png') no-repeat 0 0; width: 792px; height: 432px; margin: 0 auto 0 auto; border: 1px solid transparent; position: relative; top: -20px;}
+#card .card-refl{background: url('card-refl.png') no-repeat 0 0; width: 792px; height: 150px; margin: 2px auto;position: relative; top: 30px;}
+
+#card .text-bg {background :url('text.png') no-repeat 0 0; opacity: 0;}
+#card .anim1 {background-position: 0 0; width: 200px; height: 30px; margin: 40px auto 0 auto;}
+#card .anim2 {background-position: 0 -46px; width: 580px; height: 60px; margin: 20px auto;}
+#card .anim3 {background-position: 0 -120px; width: 436px; height: 94px; margin: 0 auto;}
+#card .anim4 {width: 200px; height: 0px; margin: 0 auto;}
+#card .anim5 {background-position: 0 -282px; width: 436px; height: 94px; margin: 0 auto;}
+#card a {display: block; text-decoration: none; font-size: 32px; color: #DAB866; text-align: center;}
