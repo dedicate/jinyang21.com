@@ -40,11 +40,13 @@ $(document).ready(function() {
 	
 	$(function() {
 		$.preloadImages([
-			"/res/body-bg.png",
+			"/res/plate-bg.png",
 			"/res/brand-banner.jpg",
 			"/res/card-paper.png",
 			"/res/card-refl.png",
-			"/res/home-bg-1920.jpg",
+			"/res/home-bg-1920-1.jpg",
+			"/res/home-bg-1920-2.jpg",
+			"/res/home-bg-1920-3.jpg",
 			"/res/light.jpg",
 			"/res/loading.gif",
 			"/res/main-frame-bg.jpg",
@@ -71,6 +73,7 @@ $(document).ready(function() {
 	$('.logo-bg').click(function() {
 		$(this).animate({opacity: 0}, 1000);
 		$('.light-object').animate({opacity: 0, top: '-100px'}, 1000, function() {
+			$('.intro-animate').css('background', 'transparent');
 			$('#light').remove();
 			var bgPlatesHolder = $('.bg-plates-holder');
 			var bgPlate = $('.bg-plate');
@@ -85,12 +88,12 @@ $(document).ready(function() {
 				
 				$('.anim1').animate({opacity:1}, 1000, function() {
 					$('.anim2').animate({opacity:1}, 800, function() {
-						$('.anim3').animate({opacity:1}, 1500, function() {
+						$('.anim3').animate({opacity:1}, 800, function() {
 							$('.anim4').animate({height: '40px', opacity: 1}, 500, function() {
 							
 							});
 						});
-						$('.anim5').animate({opacity:1}, 1500, function() {
+						$('.anim5').animate({opacity:1}, 800, function() {
 							
 						});
 					});

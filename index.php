@@ -71,13 +71,15 @@
 <body>
 <div class='loaderbar'><div class='fluid'></div></div>
 <div class='bg-plates-holder centered'>
-	<div class='bg-plate init-hide'></div>
+	<div class='bg-plate-wrapper'>
+		<div class='bg-plate init-hide'></div>
+	</div>
 </div>
 
 <?php
 	if($includeContent == "") {
 ?>
-<div class='intro-animate'>
+<div class='intro-animate centered'>
 	<div id='light'>
 		<div class='light-object'></div>
 		<div class='logo-bg'>
