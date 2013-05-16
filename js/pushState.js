@@ -1,3 +1,13 @@
+$.cssHooks["backgroundPositionX"] = {
+    get: function(elem, computed, extra) {
+        return elem.style.backgroundPosition.split(' ')[0];
+    },
+    set: function(elem, value) {
+        var y = elem.style.backgroundPosition.split(' ')[1];
+        elem.style.backgroundPosition = value + ' ' + y;
+    }
+};
+
 $(document).ready(function() {
 	/***********************/
 	/**push state**/

@@ -1,5 +1,5 @@
 .bg-wrapper {display: none;}
-#light {}
+#light { background: black;}
 #light .light-object {background: url('light.jpg') no-repeat 0 0; width: 450px; height: 450px; margin: 0px auto; position: relative;}
 #light .logo-bg {height: 57px; width: 100%; margin-top: 25px; overflow: hidden; cursor: pointer; background: #090909; position: relative;}
 #light .logo-caption-shine {background:url('bigshine.png') -500px 0 no-repeat; position: absolute; width: 100%; height: 57px; z-index: 1;}

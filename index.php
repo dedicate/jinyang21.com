@@ -70,7 +70,9 @@
 
 <body>
 <div class='loaderbar'><div class='fluid'></div></div>
-<div class='bg-plates-holder centered'><div class='bg-plate init-hide'></div></div>
+<div class='bg-plates-holder centered'>
+	<div class='bg-plate init-hide'></div>
+</div>
 
 <?php
 	if($includeContent == "") {

@@ -28,23 +28,12 @@
 	});
 })(jQuery);
 
-$.cssHooks["backgroundPositionX"] = {
-    get: function(elem, computed, extra) {
-        return elem.style.backgroundPosition.split(' ')[0];
-    },
-    set: function(elem, value) {
-        var y = elem.style.backgroundPosition.split(' ')[1];
-        elem.style.backgroundPosition = value + ' ' + y;
-    }
-};
-
 $(document).ready(function() {
 	var logoBg = $('.logo-bg');
 	var captionShine = $('.logo-caption-shine');
 	captionShine.css({opacity: 0.8});
 	logoBg.mouseenter(function() {
 		captionShine.stop().css("background-position","-500px 0").animate({"backgroundPositionX": '2000px'},700);
-		console.log('over');
 	});
 	
 	var fluid = $('.fluid');
