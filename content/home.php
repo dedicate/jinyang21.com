@@ -1,60 +1,86 @@
-<ul id='home-bg'>
-	<li class='bg-one'></li>
-	<li class='bg-two'></li>
-	<li class='bg-three'></li>
-</ul>
+<div id='home-bg'>
 
-<script type='text/javascript'>
-$(document).ready(function() {
-	var homeBgs = $('#home-bg li');
-	var currentHomeBgIndex = 0;
-	var nextHomeBgIndex = 0;
-	var bgRun = function() {
-		if(currentHomeBgIndex >= 2) {
-			nextHomeBgIndex = 0;
-		} else {
-			nextHomeBgIndex = currentHomeBgIndex + 1;
-		}
-		
-		var currentBg = $(homeBgs[currentHomeBgIndex]);
-		var nextBg = $(homeBgs[nextHomeBgIndex]);
-		
-		
-		switch(currentHomeBgIndex) {
-			case 0:
-				nextBg.css({'backgroundSize': '105%', 'zIndex': 2});
-				currentBg.css({'backgroundSize': '100%'}).animate({'backgroundSize': '105%'}, 7000, 'linear', function() {
-					currentBg.animate({'opacity': 0}, 600, function() {
-						currentBg.css({'opacity': 1, 'zIndex': 1, 'backgroundSize': '100%'});
-						$(nextBg).css({'zIndex': 3});
-					});
-				});
+</div>
+
+<script src="/js/kinetic.4.5.2.min.js"></script>
+<script defer="defer">
+	var sources = {
+		0: "/res/home-bg-1920-1.jpg",
+		1: "/res/home-bg-1920-2.jpg",
+		2: "/res/home-bg-1920-3.jpg"
+	};
+	var  images = {};
+	for(var idx in sources) {
+		images[idx] = new Image();
+		images[idx].src = sources[idx];
+		images.onload = function() {
+		};
+	}
+	var stage = new Kinetic.Stage({
+		container: 'home-bg',
+		width: 1920,
+		height: 1000
+	});
+
+	var layer = new Kinetic.Layer();
+
+	var rects = [
+		new Kinetic.Rect({x: 0, y: 0, width: 1920, height: 1000}),
+		new Kinetic.Rect({x: 0, y: 0, width: 1920, height: 1000}),
+		new Kinetic.Rect({x: 0, y: 0, width: 1920, height: 1000})
+	];
+	
+	for(var i = 0; i <= 2; i++) {
+		rects[i].setFillPatternImage(images[i]);
+		layer.add(rects[i]);
+		rects[i].setZIndex(i);
+	}
+	stage.add(layer);
+	stage.draw();
+	
+	var animateIdx = 2;
+	anim = new Kinetic.Animation(function(frame) {
+		switch(animateIdx) {
+			case 2:
+				scale = 1 + frame.time / 150000;
+				rects[animateIdx].setScale(scale);
 				break;
 			case 1:
-				nextBg.css({'backgroundSize': '100%', 'zIndex': 2});
-				currentBg.css({'backgroundSize': '105%'}).animate({'backgroundSize': '100%'}, 7000, 'linear', function() {
-					currentBg.animate({'opacity': 0}, 600, function() {
-						currentBg.css({'opacity': 1, 'zIndex': 1, 'backgroundSize': '100%'});
-						$(nextBg).css({'zIndex': 3});
-					});
-				});
+				xPos = -frame.time / 100;
+				rects[animateIdx].setX(xPos);
 				break;
-			case 2:
-				nextBg.css({'backgroundSize': '100%', 'zIndex': 2});
-				currentBg.css({'backgroundSize': '100%'}).animate({'backgroundSize': '105%'}, 7000, 'linear', function() {
-					currentBg.animate({'opacity': 0}, 600, function() {
-						currentBg.css({'opacity': 1, 'zIndex': 1, 'backgroundSize': '100%'});
-						$(nextBg).css({'zIndex': 3});
-					});
-				});
+			case 0:
+				scale = 1 + frame.time / 80000;
+				xPos = -frame.time / 100;
+				rects[animateIdx].setScale(scale);
+				rects[animateIdx].setX(xPos);
 				break;
 		}
-		currentHomeBgIndex++;
-		if(currentHomeBgIndex >= 3) {
-			currentHomeBgIndex = 0;
+		if(frame.time >= 4000) {
+			var op = (5000 - frame.time) / 1000;
+			rects[animateIdx].setOpacity(op);
 		}
-	}
-	bgRun();
-	setInterval(bgRun, 7800);
-});
+		if(frame.time >= 5000) {
+			frame.time = 0;
+			rects[animateIdx].hide();
+			rects[animateIdx].setX(0);
+			rects[animateIdx].setScale(1);
+			rects[animateIdx].setOpacity(1);
+			rects[animateIdx].setZIndex(0);
+			
+			animateIdx--;
+			if(animateIdx < 0) {
+				animateIdx = 2;
+			}
+			rects[animateIdx].setZIndex(2);
+			if(animateIdx == 0) {
+				rects[2].show();
+				rects[2].setZIndex(1);
+			} else {
+				rects[animateIdx - 1].show();
+				rects[animateIdx - 1].setZIndex(1);
+			}
+		}
+	}, layer);
+	anim.start();
 </script>

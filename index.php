@@ -53,12 +53,13 @@
 <script type="text/javascript" src="/js/jquery.imagesloaded.min.js"></script>
 <script type="text/javascript" src="/js/cufon-yui-1.09i.js"></script>
 <script type="text/javascript" src="/font/Embassy_500.font.js"></script>
+<script type="text/javascript" src="/js/jquery.chosen.min.js"></script>
 
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA25sVpx-7yjUigqlO85LIisycEHdUdTAE&sensor=false"></script>
 
 <link href="/res/template.css" media="screen" rel="stylesheet" type="text/css">
 <link href="/res/jquery.mCustomScrollbar.css" media="screen" rel="stylesheet" type="text/css">
-
+<link href="/res/chosen.css" media="screen" rel="stylesheet" type="text/css">
 <?php
 	if($includeContent == "") {
 ?>
@@ -81,7 +82,6 @@
 ?>
 <div class='intro-animate centered'>
 	<div id='light'>
-		<div class='light-object'></div>
 		<div class='logo-bg'>
 			<div class='logo-caption-shine'></div>
 			<div class='logo-gold'></div>
@@ -139,7 +139,17 @@
 	</div>
 	
 	<div id="body_tail" class='init-hide'>
-		<div class="body_tail">2013 JY21 ALL RIGHTS RESERVED</div>
+		<div class="body_tail">
+			<div class='left-links'>
+				<a href='/join.htm'>加入我们</a>
+				<a href='/join.htm'>关于我们</a>				
+				<a class='out-link' href='http://e.weibo.com/JY21style'>官方微博</a>
+				<a class='out-link' href='http://thebeautygroup.com'>The Beauty Group</a>
+			</div>
+			<div class='right-text'>
+				2013 JY21 ALL RIGHTS RESERVED
+			</div>
+		</div>
 	</div>
 </div>
 

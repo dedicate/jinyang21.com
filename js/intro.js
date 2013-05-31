@@ -71,8 +71,7 @@ $(document).ready(function() {
 	var bodyTail = $('#body_tail');
 	
 	$('.logo-bg').click(function() {
-		$(this).animate({opacity: 0}, 1000);
-		$('.light-object').animate({opacity: 0, top: '-100px'}, 1000, function() {
+		$('.logo-bg').animate({opacity: 0, top: '250px'}, 500, function() {
 			$('.intro-animate').css('background', 'transparent');
 			$('#light').remove();
 			var bgPlatesHolder = $('.bg-plates-holder');

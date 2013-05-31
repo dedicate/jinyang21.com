@@ -3,8 +3,7 @@
 .intro-animate {background: black;}
 
 #light {}
-#light .light-object {background: url('light.jpg') no-repeat 0 0; width: 450px; height: 450px; margin: 0px auto; position: relative;}
-#light .logo-bg {height: 57px; width: 100%; margin-top: 25px; overflow: hidden; cursor: pointer; background: #090909; position: relative;}
+#light .logo-bg {height: 57px; width: 100%; top: 275px; overflow: hidden; cursor: pointer; background: #090909; position: relative;}
 #light .logo-caption-shine {background:url('bigshine.png') -500px 0 no-repeat; position: absolute; width: 100%; height: 57px; z-index: 1;}
 #light .logo-gold {background: url('logo-gold.png') 0 0 no-repeat; width: 120px; height: 47px; margin: 5px auto; position: relative; z-index: 2;}
 

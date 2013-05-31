@@ -1,3 +1,5 @@
+var anim
+
 $.cssHooks["backgroundPositionX"] = {
     get: function(elem, computed, extra) {
         return elem.style.backgroundPosition.split(' ')[0];
@@ -17,9 +19,17 @@ $(document).ready(function() {
 	var ApplicationRouter = Backbone.Router.extend({
 		initialize: function() {
 			$('body').on('click', 'a', function(e) {
-				e.preventDefault();
-				var href = $(this).attr('href');
-				Backbone.history.navigate(href, true);
+				if($(this).attr('class') != 'out-link') {
+					e.preventDefault();
+					var href = $(this).attr('href');
+					
+					if(anim != undefined && href != '/home.htm') {
+						anim.stop();
+						anim = undefined;
+					}
+					
+					Backbone.history.navigate(href, true);
+				}
 			});
 		},
 		routes: {
@@ -67,7 +77,7 @@ $(document).ready(function() {
 			liBg.css('width', liWidth);
 		}
 		
-		var bottomLinkTop = $(window).height() - 18;
+		var bottomLinkTop = $(window).height() - 22;
 		bottomLink.css('top', bottomLinkTop);
 	}
 	repositionToolbar();

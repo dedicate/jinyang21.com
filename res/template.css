@@ -1,4 +1,6 @@
+ul {padding: 0; margin: 0; list-style: none;}
 body {overflow:auto; height:100%; padding: 0; margin: 0; font-family: "微软雅黑","Microsoft YaHei"; font-size: 12px; background: black;}
+a {text-decoration:none;}
 a:hover {text-decoration:none;}
 .centered { top:0; bottom:0; left:0; right:0; margin:auto; overflow:hidden; position:absolute;}
 
@@ -12,7 +14,7 @@ a:hover {text-decoration:none;}
 
 /*body_head*/
 #body_head {width: 100%; overflow: hidden; padding: 0;}
-#body_head .logo {background: url('logo-gold.png') no-repeat; width: 120px; height: 48px; margin: 10px 20px; float: left;}
+#body_head .logo {background: url('logo-gold.png') no-repeat; width: 120px; height: 48px; margin: 15px 20px 0px 40px; float: left;}
 
 #body_head .navi-main {float: left; position:relative; height: 43px; padding-top: 5px; margin: 10px 0;}
 #body_head .navi-main #li-bg {background: white; position: absolute; z-index: 1; height: 3px; top: 45px;}
@@ -28,17 +30,22 @@ a:hover {text-decoration:none;}
 #body_head .navi-main li.news  div.t {width: 75px;}
 
 /*body_tail*/
-#body_tail {padding: 3px; height: 18px; width: 100%; overflow: hidden; padding: 0; background: black; color: white; position: absolute; font-size: 9px; text-align: right;}
-
+#body_tail {height: 22px; width: 100%; overflow: hidden; padding: 0; background: black; color: white; position: absolute; font-size: 10px;}
+#body_tail a {color: white; display: block; float: left; margin: 1px 10px;}
+#body_tail .left-links{float: left; width: 350px; margin-top: 3px;}
+#body_tail .right-text{float: right; width: 280px; text-align: right; margin-top: 3px;}
 /*body_main_frame*/
 .body_main_frame {margin-top: 10px; height: 610px; overflow: hidden; position: relative; border-top: 2px solid #dab866; border-bottom: 2px solid #dab866; background: url('main-frame-bg.jpg') -100px -100px;}
 
 /*general*/
 .stage {width: 1000px; height: 100%; margin: 0 auto; overflow: auto;}
 .stage .frame-content {}
-.stage .frame-content .title {color: #dab866; float: left; text-align: right; font-size: 20px; font-weight: bold; padding: 50px 10px 150px 0; margin: 10px; height: 100px;}
+.stage .frame-content .title {width: 155px; color: #dab866; float: left; text-align: right; font-size: 20px; font-weight: bold; padding-top: 50px; margin: 10px;}
 .stage .frame-content .title .sub {font-size: 36px;}
-.stage .frame-content .content {color: white; float: left; margin: 10px; padding: 0;}
+.stage .frame-content .title .info {font-weight: normal;}
+.stage .frame-content .title .info .info-tag {font-size: 14px; font-weight: bold; padding: 10px 0;}
+.stage .frame-content .title .info .info-text {font-size: 12px; color: white;}
+.stage .frame-content .content {height: 500px; width: 805px; color: white; float: left; margin: 10px; padding: 0; overflow: hidden;}
 
 .stage-full {width: 100%; height: 100%; margin:0; overflow: auto;}
 .stage-full .frame-content .title {color: #dab866; font-size: 20px; font-weight: bold; padding: 10px; text-align: right; width: 400px;}
@@ -46,39 +53,37 @@ a:hover {text-decoration:none;}
 .stage-full .frame-content .content {padding: 0 10px;}
 /*home*/
 #home-bg {width: 100%; height: 100%; margin: 0; padding: 0; position: absolute; list-style: none;}
-#home-bg .bg-one		{width: 100%; height: 100%; background: url('home-bg-1920-1.jpg') no-repeat 0 0; position: absolute; z-index: 3;}
-#home-bg .bg-two		{width: 100%; height: 100%; background: url('home-bg-1920-2.jpg') no-repeat 0 0; position: absolute; z-index: 2;}
-#home-bg .bg-three	{width: 100%; height: 100%; background: url('home-bg-1920-3.jpg') no-repeat 0 0; position: absolute; z-index: 1;}
 /*branding*/
-.frame-content .content .brand-banner {float: left; margin: 0; background: url('brand-banner.jpg') no-repeat; width: 350px; height: 590px; }
-.frame-content .content .brand-text {float: left; margin: 20px; padding-top: 40px; font-weight: bold; line-height: 2em;}
+.frame-content .content .brand-banner {float: left; margin: 0; background: url('brand-banner.jpg') no-repeat; width: 340px; height: 500px; }
+.frame-content .content .brand-text {float: left; margin: 15px 10px; padding-top: 15px; font-weight: bold; line-height: 2em; width: 440px;}
+.frame-content .logo-mini {align:bottom;}
 /*collection*/
-.collection-gallery {width: 100%; margin-top: 40px; height: 475px; overflow: auto;}
+.collection-gallery {width: 100%; margin-top: 20px; height: 475px; overflow: auto;}
 .collection-gallery ul.gallery {overflow: hidden; padding: 0; margin: 0;}
-.collection-gallery ul.gallery li { height: 450px; float: left; margin: 0; list-style: none; border: 2px solid transparent;}
+.collection-gallery ul.gallery li {height: 450px; float: left; margin: 0; list-style: none; border: 2px solid transparent;}
 .collection-gallery ul.gallery li.gallery-loading {background-color: white; color: black; width: 240px; height: 450px;}
 .collection-gallery ul.gallery li.gallery-loading .text{width: 240px; padding-top: 65px; margin: 150px 0; text-align: center; background: url('loading.gif') no-repeat 95px 0;}
 .collection-gallery ul.gallery li.seasonal-intro {color: white;}
 .collection-gallery .mCSB_horizontal.mCustomScrollBox  .mCSB_scrollTools {top: 460px;}
 /*location*/
-.map-location {float: left; width: 230px; height: 580px; overflow: auto;}
+.map-location-city li {margin: 4px 0 4px 80px; padding: 5px 5px 5px 15px; border-bottom: 1px solid transparent; cursor: pointer;}
+.map-location-city li.selected {padding: 5px 20px 5px 0; border-bottom: 1px solid #fff;}
+.map-location-selector {float: left; height: 576px;}
+.map-location-selector .map-location {width: 230px; overflow: auto;}
 .map-container {width: 566px; height:576px; float: left; margin-left: 5px; border: 2px solid white;}
-
 .map-location-list {margin: 0; padding: 0; list-style: none; }
-.map-location-list li {border-bottom: 1px solid white; padding: 0px 4px; cursor: pointer; height: 80px;}
-.map-location-list li .name {font-size: 16px; padding: 4px 0;}
+.map-location-list ul {}
+.map-location-list li {padding: 10px 4px; cursor: pointer; height: 80px; position: relative;}
+.map-location-list li .name {font-size: 16px; padding: 3px 0;}
 .map-location-list li .add {font-size: 9px; color: #555;}
 .map-location-list li .tel {font-size: 9px; color: #555;}
 
-
-@media screen and (min-width: 1010px) and (max-width: 1280px){
-	.body_main_frame {top: 25px; height: 550px;}
-	#body_head {display: none;}
-	#home-bg-0 {background: url('home-bg-1000.jpg'); width: 1000px; height: 548px; margin: 1px auto;}
+/*responsive*/
+@media screen and (min-height: 550px) and (max-height: 720px){
+	.body_main_frame {top: 0px; height: 525px;}
+	/*general*/
+	.stage-full .frame-content .title {display: none;}
+	/*location*/
+	.map-location-selector {height: 505px;}
+	.map-container {height:500px;}
 }
-/*
-@media screen and (min-width: 480px) and (max-width: 1024px){
-	.body_main_frame {top: 60px; height: 450px;}
-	#home-bg-0 {background: url('home-bg-1000.jpg'); width: 90%; height: 450px; margin: 1px auto;}
-}
-*/
