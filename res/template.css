@@ -73,7 +73,7 @@ a:hover {text-decoration:none;}
 .map-container {width: 566px; height:576px; float: left; margin-left: 5px; border: 2px solid white;}
 .map-location-list {margin: 0; padding: 0; list-style: none; }
 .map-location-list ul {}
-.map-location-list li {padding: 10px 4px; cursor: pointer; height: 80px; position: relative;}
+.map-location-list li {padding: 2px 4px; cursor: pointer; height: 80px; position: relative;}
 .map-location-list li .name {font-size: 16px; padding: 3px 0;}
 .map-location-list li .add {font-size: 9px; color: #555;}
 .map-location-list li .tel {font-size: 9px; color: #555;}
