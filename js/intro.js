@@ -47,7 +47,6 @@ $(document).ready(function() {
 			"/res/home-bg-1920-1.jpg",
 			"/res/home-bg-1920-2.jpg",
 			"/res/home-bg-1920-3.jpg",
-			"/res/light.jpg",
 			"/res/loading.gif",
 			"/res/main-frame-bg.jpg",
 			"/res/mCSB_buttons.png",
@@ -56,6 +55,7 @@ $(document).ready(function() {
 			loaded: function(img, loaded, total) {
 				var percentage = (loaded/total) * 100 + '%';
 				fluid.stop().animate({'width': percentage}, 100);
+				console.log(img);
 			},
 			loaded_all: function(loaded, total) {
 				fluid.animate({'opacity': 0}, 1000, function() {
