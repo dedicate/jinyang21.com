@@ -22,12 +22,6 @@ $(document).ready(function() {
 				if($(this).attr('class') != 'out-link') {
 					e.preventDefault();
 					var href = $(this).attr('href');
-					
-					if(anim != undefined && href != '/home.htm') {
-						anim.stop();
-						anim = undefined;
-					}
-					
 					Backbone.history.navigate(href, true);
 				}
 			});

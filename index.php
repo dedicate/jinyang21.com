@@ -42,24 +42,26 @@
 <meta name="keywords" content="">
 <meta name="description" content="">
 <title></title>
-<script type="text/javascript" src="/js/jquery.1.9.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery.1.8.0.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="/js/underscore.1.4.4.min.js"></script>
 <script type="text/javascript" src="/js/backbone.1.0.0.min.js"></script>
-
-<script type="text/javascript" src="/js/pushState.js"></script></head>
 
 <!--script type="text/javascript" src="/js/jquery.animate.color.min.js"></script -->
 <script type="text/javascript" src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="/js/jquery.imagesloaded.min.js"></script>
+<script type="text/javascript" src="/js/tmSlider.js"></script>
+<!-- script type="text/javascript" src="/js/jquery.chosen.min.js"></script -->
 <script type="text/javascript" src="/js/cufon-yui-1.09i.js"></script>
 <script type="text/javascript" src="/font/Embassy_500.font.js"></script>
-<script type="text/javascript" src="/js/jquery.chosen.min.js"></script>
-
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA25sVpx-7yjUigqlO85LIisycEHdUdTAE&sensor=false"></script>
+
+<script type="text/javascript" src="/js/pushState.js"></script></head>
 
 <link href="/res/template.css" media="screen" rel="stylesheet" type="text/css">
 <link href="/res/jquery.mCustomScrollbar.css" media="screen" rel="stylesheet" type="text/css">
-<link href="/res/chosen.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/res/tmSlider.css" media="screen" rel="stylesheet" type="text/css">
+<!-- link href="/res/chosen.css" media="screen" rel="stylesheet" type="text/css" -->
 <?php
 	if($includeContent == "") {
 ?>
