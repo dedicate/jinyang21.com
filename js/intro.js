@@ -55,7 +55,6 @@ $(document).ready(function() {
 			loaded: function(img, loaded, total) {
 				var percentage = (loaded/total) * 100 + '%';
 				fluid.stop().animate({'width': percentage}, 100);
-				console.log(img);
 			},
 			loaded_all: function(loaded, total) {
 				fluid.animate({'opacity': 0}, 1000, function() {
