@@ -84,7 +84,7 @@ $(document).ready(function() {
 	}
 	setGalleryFolder();
 	setHomeImg = function() {
-		if($(window).height() < 650) {
+		if($(window).height() < 750) {
 			$('.slider ul.items').empty().append(
 				'<li><img src="/res/home-bg-1440-1.jpg" alt="" /></li>' +
 				'<li><img src="/res/home-bg-1440-2.jpg" alt="" /></li>' +
