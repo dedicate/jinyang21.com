@@ -1,4 +1,6 @@
 <?php
+	include 'content/database.php';
+
 	define('IS_AJAX', isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
 	define('BASE_PATH', dirname(__FILE__));
 	$url = $_SERVER["REQUEST_URI"];
@@ -26,6 +28,10 @@
 			$includeContent = BASE_PATH . '/content/news.php';
 			$selectedIndex = 5;
 			break;
+		case '/join.htm':
+			$includeContent = BASE_PATH . '/content/join.php';
+			$selectedIndex = 1;
+			break;
 	}
 		
 	
@@ -51,6 +57,7 @@
 <script type="text/javascript" src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script type="text/javascript" src="/js/jquery.imagesloaded.min.js"></script>
 <script type="text/javascript" src="/js/tmSlider.js"></script>
+<script type="text/javascript" src="/js/lightbox.js"></script>
 <!-- script type="text/javascript" src="/js/jquery.chosen.min.js"></script -->
 <script type="text/javascript" src="/js/cufon-yui-1.09i.js"></script>
 <script type="text/javascript" src="/font/Embassy_500.font.js"></script>
@@ -61,6 +68,7 @@
 <link href="/res/template.css" media="screen" rel="stylesheet" type="text/css">
 <link href="/res/jquery.mCustomScrollbar.css" media="screen" rel="stylesheet" type="text/css">
 <link href="/res/tmSlider.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/res/lightbox.css" media="screen" rel="stylesheet" type="text/css" />
 <!-- link href="/res/chosen.css" media="screen" rel="stylesheet" type="text/css" -->
 <?php
 	if($includeContent == "") {
@@ -121,7 +129,7 @@
 						<a class="<?php echo $selectedIndex == 3 ? 'selected' : ''?>" href="/collection.htm"><div class='t'>系列展示 <br /> <span class='en'>COLLECTION</span></div></a>
 					</li>
 					<li class="location">
-						<a class="<?php echo $selectedIndex == 4 ? 'selected' : ''?>" href="/location.htm"><div class='t'>门店位置 <br /> <span class='en'>LOCATION</span></div></a>
+						<a class="<?php echo $selectedIndex == 4 ? 'selected' : ''?>" href="/location.htm"><div class='t'>门店位置 <br /> <span class='en'>STORE LOCATION</span></div></a>
 					</li>
 					<li class="news">
 						<a class="<?php echo $selectedIndex == 5 ? 'selected' : ''?>" href="/news.htm"><div class='t'>JY21事件<br /> <span class='en'>JY21 NEWS</span></div></a>
@@ -143,10 +151,9 @@
 	<div id="body_tail" class='init-hide'>
 		<div class="body_tail">
 			<div class='left-links'>
-				<a href='/join.htm'>加入我们</a>
-				<a href='/join.htm'>关于我们</a>				
-				<a class='out-link' href='http://e.weibo.com/JY21style'>官方微博</a>
-				<a class='out-link' href='http://thebeautygroup.com'>The Beauty Group</a>
+				<a href='/join.htm'>加入我们</a>			
+				<a target='_blank' class='out-link' href='http://e.weibo.com/JY21style'><img src='/res/weibo_logo_mini.png' style='height: 12px;' />&nbsp;官方微博</a>
+				<a target='_blank' class='out-link' href='http://thebeautygroup.com'>The Beauty Group</a>
 			</div>
 			<div class='right-text'>
 				2013 JY21 ALL RIGHTS RESERVED

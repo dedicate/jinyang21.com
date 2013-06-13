@@ -18,7 +18,8 @@
 </div>
 
 <script>
-var imagesToLoad = 13;
+var galleryFolder = '13ss';
+var imagesToLoad = 16;
 var currentImageLoadedIndex = 0;
 var imageLoadPerpage = 5;
 var moreImageToLoad = true;
@@ -41,7 +42,10 @@ $(document).ready(function() {
 	
 	for(var i = 1; i <= imageLoadPerpage; i++) {
 		currentImageLoadedIndex++;
-		var liTag = "<li><img src='/image/13ss/" + currentImageLoadedIndex + ".jpg'></li>";
+		var liTag = "<li>" + 
+			"<a class='js-link' rel='lightbox[" + galleryFolder + "]' href='#' gallery='" + galleryFolder + "' pic='" + currentImageLoadedIndex + "'>" + 
+			"<img src='/image/" + galleryFolder + "/" + currentImageLoadedIndex + ".jpg'>" + 
+			"</a></li>";
 		$(".collection-gallery ul.gallery .gallery-loading").before(liTag);
 	}
 	
@@ -53,7 +57,10 @@ $(document).ready(function() {
 		if(moreImageToLoad) {
 			for(var i = 1; i <= imageLoadPerpage; i++) {
 				currentImageLoadedIndex++;
-				var liTag = "<li><img src='/image/13ss/" + currentImageLoadedIndex + ".jpg'></li>";
+				var liTag = "<li>" + 
+				"<a class='js-link' rel='lightbox[" + galleryFolder + "]' href='#' gallery='" + galleryFolder + "' pic='" + currentImageLoadedIndex + "'>" + 
+				"<img src='/image/" + galleryFolder + "/" + currentImageLoadedIndex + ".jpg'>" + 
+				"</a></li>";
 				$(".collection-gallery ul.gallery .gallery-loading").before(liTag);
 				if(currentImageLoadedIndex >= imagesToLoad) {
 					moreImageToLoad = false;

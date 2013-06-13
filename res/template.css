@@ -26,7 +26,7 @@ a:hover {text-decoration:none;}
 #body_head .navi-main li.home div.t {width: 40px;}
 #body_head .navi-main li.story div.t {width: 70px;}
 #body_head .navi-main li.collection div.t {width: 75px;}
-#body_head .navi-main li.location div.t {width: 65px;}
+#body_head .navi-main li.location div.t {width: 125px;}
 #body_head .navi-main li.news  div.t {width: 75px;}
 
 /*body_tail*/
@@ -35,7 +35,7 @@ a:hover {text-decoration:none;}
 #body_tail .left-links{float: left; width: 350px; margin-top: 3px;}
 #body_tail .right-text{float: right; width: 280px; text-align: right; margin-top: 3px;}
 /*body_main_frame*/
-.body_main_frame {margin-top: 10px; height: 610px; overflow: hidden; position: relative; border-top: 2px solid #dab866; border-bottom: 2px solid #dab866; background: url('main-frame-bg.jpg') -100px -100px;}
+.body_main_frame {margin-top: 10px; height: 1000px; overflow: hidden; position: relative; border-top: 2px solid #dab866; border-bottom: 2px solid #dab866; background: url('main-frame-bg.jpg') -100px -100px;}
 
 /*general*/
 .stage {width: 1000px; height: 100%; margin: 0 auto; overflow: auto;}
@@ -77,13 +77,22 @@ a:hover {text-decoration:none;}
 .map-location-list li .name {font-size: 16px; padding: 3px 0;}
 .map-location-list li .add {font-size: 9px; color: #555;}
 .map-location-list li .tel {font-size: 9px; color: #555;}
+/*join us*/
+.join-us ul {padding: 0; margin: 0;}
+.join-us li.item {margin: 16px 0; padding: 16px; background: #222;}
+.join-us li.line {margin: 6px 0; padding: 0;}
+.join-us .job-list {overflow: auto; height: 505px;}
+.join-us .job-title {font-size: 16px; padding: 6px 0; margin: 6px 0; border-bottom: 1px solid #777;}
 
 /*responsive*/
 @media screen and (min-height: 550px) and (max-height: 720px){
-	.body_main_frame {top: 0px; height: 525px;}
+	.body_main_frame {top: 0px; height: 545px;}
 	/*general*/
 	.stage-full .frame-content .title {display: none;}
 	/*location*/
 	.map-location-selector {height: 505px;}
 	.map-container {height:500px;}
+}
+@media screen and (min-height: 721px) and (max-height: 900px){
+	.body_main_frame {top: 0px; height: 610px;}
 }

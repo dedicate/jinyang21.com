@@ -1,7 +1,7 @@
 <div class='stage'>
 	<div class='frame-content'>
 		<div class='title'>
-			LOCATION
+			STORE LOCATION
 			<div class='info'>
 				<div class='info-text map-location-city'>
 					<ul>

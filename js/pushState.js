@@ -19,7 +19,7 @@ $(document).ready(function() {
 	var ApplicationRouter = Backbone.Router.extend({
 		initialize: function() {
 			$('body').on('click', 'a', function(e) {
-				if($(this).attr('class') != 'out-link') {
+				if($(this).attr('class') != 'out-link' && $(this).attr('class') != 'js-link') {
 					e.preventDefault();
 					var href = $(this).attr('href');
 					Backbone.history.navigate(href, true);
@@ -75,8 +75,34 @@ $(document).ready(function() {
 		bottomLink.css('top', bottomLinkTop);
 	}
 	repositionToolbar();
+	setGalleryFolder = function() {
+		if($(window).height() > 750) {
+			window.galleryFolderName = '700';
+		} else {
+			window.galleryFolderName = '500';
+		}
+	}
+	setGalleryFolder();
+	setHomeImg = function() {
+		if($(window).height() < 650) {
+			$('.slider ul.items').empty().append(
+				'<li><img src="/res/home-bg-1440-1.jpg" alt="" /></li>' +
+				'<li><img src="/res/home-bg-1440-2.jpg" alt="" /></li>' +
+				'<li><img src="/res/home-bg-1440-3.jpg" alt="" /></li>'
+			);
+		} else {
+			$('.slider ul.items').empty().append(
+				'<li><img src="/res/home-bg-1920-1.jpg" alt="" /></li>' +
+				'<li><img src="/res/home-bg-1920-2.jpg" alt="" /></li>' +
+				'<li><img src="/res/home-bg-1920-3.jpg" alt="" /></li>'
+			);
+		}
+	}
+	setHomeImg();
 	$(window).resize(function() {
 		repositionToolbar();
+		setGalleryFolder();
+		setHomeImg();
 	});
 	
 	var currentIndex = 0;
@@ -90,9 +116,8 @@ $(document).ready(function() {
 		
 		$(obj).mouseenter(function() {
 			liBg.stop().animate({'left':liWidth * (i)}, 500);
-			//$(this).stop().animate({'color':'#000000'}, 500);
 		}).mouseleave(function() {
-			//$(this).stop().animate({'color':'#ffffff'}, 500);
+			
 		});
 	});
 	liBg.stop().css({'left':liWidth * (currentIndex)});
