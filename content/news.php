@@ -39,8 +39,10 @@ $(document).ready(function() {
 	$(".next").css('opacity', 0);
 	$(".item").mouseover(function() {
 		$(this).find('.next').stop().animate({'left': '770px', 'opacity': 0.6});
+		$(this).css('background-color', '#555');
 	}).mouseout(function() {
 		$(this).find('.next').stop().animate({'left': '800px', 'opacity': 0});
+		$(this).css('background-color', '#222');
 	});
 });
 </script>
