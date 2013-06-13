@@ -1,4 +1,8 @@
-<?php $jobCollection = $db->jobs; ?>
+<?php 
+$m = new MongoClient('mongodb://craftgavin:whothirstformagic?@localhost');
+$db = $m->jy;
+$jobCollection = $db->jobs;
+?>
 
 <div class='stage'>
 	<div class='frame-content'>
@@ -7,7 +11,7 @@
 		</div>
 		
 		<div class='content join-us '>
-			<div class='job-list'><ul>
+			<div class='job-list m-scroller'><ul>
 			<?php
 				$cursor = $jobCollection->find();
 				foreach ($cursor as $doc) {
@@ -41,6 +45,8 @@
 	</div>
 </div>
 
-<script>
-$(".job-list").mCustomScrollbar();
+<script type='text/javascript'>
+$(document).ready(function() {
+	$(".m-scroller").mCustomScrollbar();
+});
 </script>

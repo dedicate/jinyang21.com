@@ -51,6 +51,8 @@ a:hover {text-decoration:none;}
 .stage-full .frame-content .title {color: #dab866; font-size: 20px; font-weight: bold; padding: 10px; text-align: right; width: 400px;}
 .stage-full .frame-content .title .sub {font-size: 36px;}
 .stage-full .frame-content .content {padding: 0 10px;}
+
+.m-scroller {overflow: auto; height: 505px;}
 /*home*/
 #home-bg {width: 100%; height: 100%; margin: 0; padding: 0; position: absolute; list-style: none;}
 /*branding*/
@@ -77,11 +79,19 @@ a:hover {text-decoration:none;}
 .map-location-list li .name {font-size: 16px; padding: 3px 0;}
 .map-location-list li .add {font-size: 9px; color: #555;}
 .map-location-list li .tel {font-size: 9px; color: #555;}
+/*news*/
+.news-list li.month {font-size: 16px; font-weight: bold; border-bottom: 1px solid #777; padding: 5px 0; margin: 5px 0;}
+.news-list li.item {padding: 10px; margin-bottom: 15px; background: #222; position: relative; height: 180px;}
+.news-list a {color: white; display: block; padding: 0px;  overflow: auto; text-decoration: none;}
+
+.news-list .introicon {float: left; display: block;}
+.news-list .date {padding: 5px; float: left; width: 350px; color: #999;}
+.news-list .label {font-size: 14px; font-weight: bold; padding: 0 5px; float: left;}
+.news-list .next {background: url('next.png') no-repeat; width: 30px; height: 50px; position: absolute; top:70px; left: 800px;}
 /*join us*/
 .join-us ul {padding: 0; margin: 0;}
 .join-us li.item {margin: 16px 0; padding: 16px; background: #222;}
 .join-us li.line {margin: 6px 0; padding: 0;}
-.join-us .job-list {overflow: auto; height: 505px;}
 .join-us .job-title {font-size: 16px; padding: 6px 0; margin: 6px 0; border-bottom: 1px solid #777;}
 
 /*responsive*/
