@@ -27,21 +27,57 @@ $(document).ready(function() {
 			});
 		},
 		routes: {
-			':url': "frontPage"
+			':url': "frontPage",
+			'blog/:blogId': "getBlog"
 		},
 		frontPage: function(url) {
-			$.ajax({
-				dataType: 'html',
-				url: url,
-				success: function(html) {
-					bodyMainFrame.animate({'left': '-100%'}, 500, function() {
-						bodyMainFrame.empty();
-						bodyMainFrame.append(html);
-						bodyMainFrame.css('left', '100%');
-						bodyMainFrame.animate({'left': 0}, 500);
-					});
-				}
-			});
+			if(window.innerContentRefresh == true) {
+				window.innerContentRefresh = false;
+				$.ajax({
+					dataType: 'html',
+					url: url + '?getRefresh=newsItem',
+					success: function(html) {
+						$('.content').animate({opacity:0}, 500, function() {
+							$(this).empty().append(html).animate({'opacity':1});
+						});
+					}
+				});
+			} else {
+				$.ajax({
+					dataType: 'html',
+					url: url,
+					success: function(html) {
+						bodyMainFrame.animate({'left': '-100%'}, 500, function() {
+							bodyMainFrame.empty();
+							bodyMainFrame.append(html);
+							bodyMainFrame.css('left', '100%');
+							bodyMainFrame.animate({'left': 0}, 500);
+						});
+					}
+				});
+			}
+		},
+		getBlog: function(blogId) {
+			if(window.innerContentRefresh == true) {
+				window.innerContentRefresh = false;
+				$.ajax({
+					dataType: 'html',
+					url: '/blog/' + blogId + '?getRefresh=newsItem',
+					success: function(html) {
+						$('.content').animate({opacity:0}, 500, function() {
+							$(this).empty().append(html).animate({'opacity':1});
+						});
+					}
+				});
+			} else {
+				$.ajax({
+					dataType: 'html',
+					url: '/blog/' + blogId,
+					success: function(html) {
+						$('.content').empty().append(html);
+					}
+				});
+			}
 		}
 	});
 
@@ -76,7 +112,7 @@ $(document).ready(function() {
 	}
 	repositionToolbar();
 	setGalleryFolder = function() {
-		if($(window).height() > 750) {
+		if($(window).height() > 720) {
 			window.galleryFolderName = '700';
 		} else {
 			window.galleryFolderName = '500';
@@ -84,7 +120,7 @@ $(document).ready(function() {
 	}
 	setGalleryFolder();
 	setHomeImg = function() {
-		if($(window).height() < 750) {
+		if($(window).height() < 720) {
 			$('.slider ul.items').empty().append(
 				'<li><img src="/res/home-bg-1440-1.jpg" alt="" /></li>' +
 				'<li><img src="/res/home-bg-1440-2.jpg" alt="" /></li>' +

@@ -1,4 +1,5 @@
 <?php
+	date_default_timezone_set('UTC');
 	include 'content/database.php';
 
 	define('IS_AJAX', isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
@@ -32,6 +33,18 @@
 			$includeContent = BASE_PATH . '/content/join.php';
 			$selectedIndex = 1;
 			break;
+		default:
+			if(substr($url, 0, 5) == '/blog') {
+				$includeContent = BASE_PATH . '/content/blog.php';
+				$selectedIndex = 5;
+				$blogId = substr($url, 6, 24);
+				break;
+			}
+			if(substr($url, 0, 5) == '/news') {
+				$includeContent = BASE_PATH . '/content/news.php';
+				$selectedIndex = 5;
+				break;
+			}
 	}
 		
 	
@@ -40,7 +53,6 @@
 		exit(1);
 	}
 ?>
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -156,10 +168,28 @@
 				<a target='_blank' class='out-link' href='http://thebeautygroup.com'>The Beauty Group</a>
 			</div>
 			<div class='right-text'>
+				<div id="jquery_jplayer_1"></div>
 				2013 JY21 ALL RIGHTS RESERVED
 			</div>
 		</div>
 	</div>
+	
+	<script type="text/javascript" src="/js/jPlayer.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$("#jquery_jplayer_1").jPlayer({
+			ready: function() {
+				$(this).jPlayer("setMedia", {
+					m4a:"http://www.jplayer.org/audio/m4a/TSP-01-Cro_magnon_man.m4a",
+					oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
+				}).jPlayer("play");
+			},
+			loop: true,
+			swfPath: "/js/Jplayer.swf",
+			supplied: "m4a, oga",
+		});
+	});
+	</script>
 </div>
 
 </body>
