@@ -57,9 +57,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
-<meta name="keywords" content="">
+<title>JY21</title>
+<meta name="keywords" content="JY21女装">
 <meta name="description" content="">
-<title></title>
+<meta http-equiv="Pragma" CONTENT="no-cache"> 
+<meta http-equiv="Cache-Control" CONTENT="no-cache"> 
+<meta http-equiv="Expires" CONTENT="0"> 
+<link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
+
 <script type="text/javascript" src="/js/jquery.1.8.0.min.js"></script>
 <script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="/js/underscore.1.4.4.min.js"></script>
