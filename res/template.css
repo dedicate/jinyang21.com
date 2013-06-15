@@ -61,12 +61,13 @@ a:hover {text-decoration:none;}
 .frame-content .logo-mini {align:bottom;}
 /*collection*/
 .collection-gallery {width: 100%; margin-top: 20px; height: 475px; overflow: auto;}
+.collection-gallery img {border: none;}
 .collection-gallery ul.gallery {overflow: hidden; padding: 0; margin: 0;}
 .collection-gallery ul.gallery li {height: 450px; float: left; margin: 0; list-style: none; border: 2px solid transparent;}
 .collection-gallery ul.gallery li.gallery-loading {background-color: white; color: black; width: 240px; height: 450px;}
 .collection-gallery ul.gallery li.gallery-loading .text{width: 240px; padding-top: 65px; margin: 150px 0; text-align: center; background: url('loading.gif') no-repeat 95px 0;}
 .collection-gallery ul.gallery li.seasonal-intro {color: white;}
-.collection-gallery .mCSB_horizontal.mCustomScrollBox  .mCSB_scrollTools {top: 460px;}
+.collection-gallery .mCSB_horizontal.mCustomScrollBox  .mCSB_scrollTools {top: 448px;}
 /*location*/
 .map-location-city li {margin: 4px 0 4px 80px; padding: 5px 5px 5px 15px; border-bottom: 1px solid transparent; cursor: pointer;}
 .map-location-city li.selected {padding: 5px 20px 5px 0; border-bottom: 1px solid #fff;}
