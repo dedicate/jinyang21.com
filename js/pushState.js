@@ -109,16 +109,24 @@ $(document).ready(function() {
 		
 		var bottomLinkTop = $(window).height() - 22;
 		bottomLink.css('top', bottomLinkTop);
+		
+		var windowHeight = $(window).height();
+		if(windowHeight > 660) {
+			$('.body_main_frame').css('height', windowHeight - 125);
+		} else {
+			$('.body_main_frame').css('height', 535);
+		}
+		
 	}
 	repositionToolbar();
-	setGalleryFolder = function() {
+	setHomeGalleryFolder = function() {
 		if($(window).height() > 720) {
 			window.galleryFolderName = '700';
 		} else {
 			window.galleryFolderName = '500';
 		}
 	}
-	setGalleryFolder();
+	setHomeGalleryFolder();
 	setHomeImg = function() {
 		if($(window).height() < 720) {
 			$('.slider ul.items').empty().append(
@@ -137,7 +145,7 @@ $(document).ready(function() {
 	setHomeImg();
 	$(window).resize(function() {
 		repositionToolbar();
-		setGalleryFolder();
+		setHomeGalleryFolder();
 		setHomeImg();
 	});
 	
