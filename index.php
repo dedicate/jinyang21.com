@@ -79,7 +79,7 @@
 <script type="text/javascript" src="/js/cufon-yui-1.09i.js"></script>
 <script type="text/javascript" src="/font/Embassy_500.font.js"></script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA25sVpx-7yjUigqlO85LIisycEHdUdTAE&sensor=false"></script>
-
+<script type="text/javascript" src="/js/jquery-ui-1.10.3.custom.min.js"></script>
 <script type="text/javascript" src="/js/pushState.js"></script></head>
 
 <link href="/res/template.css" media="screen" rel="stylesheet" type="text/css">
@@ -181,6 +181,7 @@
 	
 	<script type="text/javascript" src="/js/jPlayer.js"></script>
 	<script type="text/javascript">
+	/*
 	$(document).ready(function(){
 		$("#jquery_jplayer_1").jPlayer({
 			ready: function() {
@@ -194,6 +195,7 @@
 			supplied: "m4a, oga",
 		});
 	});
+	*/
 	</script>
 </div>
 

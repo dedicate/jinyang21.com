@@ -47,11 +47,11 @@ $(document).ready(function() {
 					dataType: 'html',
 					url: url,
 					success: function(html) {
-						bodyMainFrame.animate({'left': '-100%'}, 500, function() {
+						bodyMainFrame.animate({'left': '-100%', opacity: 0}, 800, function() {
 							bodyMainFrame.empty();
 							bodyMainFrame.append(html);
 							bodyMainFrame.css('left', '100%');
-							bodyMainFrame.animate({'left': 0}, 500);
+							bodyMainFrame.animate({'left': 0, opacity: 1}, 300);
 						});
 					}
 				});
@@ -116,7 +116,7 @@ $(document).ready(function() {
 		} else {
 			$('.body_main_frame').css('height', 535);
 		}
-		
+		$('.logo-bg').css('top', windowHeight/2 - 60);
 	}
 	repositionToolbar();
 	setHomeGalleryFolder = function() {
