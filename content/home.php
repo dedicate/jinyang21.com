@@ -2,15 +2,14 @@
 	<div id="slide">
 		<div class="slider">
 			<ul class="items">
-				<li><img src="/res/home-bg-1920-1.jpg" alt="" /></li>
-				<li><img src="/res/home-bg-1920-2.jpg" alt="" /></li>
-				<li><img src="/res/home-bg-1920-3.jpg" alt="" /></li>
+				<li></li>
 			</ul>
 		</div>
 	</div>
 </div>
 
 <script>
+	setHomeImg();
 	$(document).ready(function(){
 		setTimeout(function() {
 			$('.slider')._TMS({
