@@ -130,15 +130,17 @@ $(document).ready(function() {
 	setHomeImg = function() {
 		if($(window).height() < 720) {
 			$('.slider ul.items').empty().append(
-				'<li><img src="/res/home-bg-1440-1.jpg" alt="" /></li>' +
-				'<li><img src="/res/home-bg-1440-2.jpg" alt="" /></li>' +
-				'<li><img src="/res/home-bg-1440-3.jpg" alt="" /></li>'
+				'<li><img src="/home/bg-1440-1.jpg" alt="" /></li>' +
+				'<li><img src="/home/bg-1440-2.jpg" alt="" /></li>' +
+				'<li><img src="/home/bg-1440-3.jpg" alt="" /></li>' + 
+				'<li><img src="/home/bg-1440-4.jpg" alt="" /></li>'
 			);
 		} else {
 			$('.slider ul.items').empty().append(
-				'<li><img src="/res/home-bg-1920-1.jpg" alt="" /></li>' +
-				'<li><img src="/res/home-bg-1920-2.jpg" alt="" /></li>' +
-				'<li><img src="/res/home-bg-1920-3.jpg" alt="" /></li>'
+				'<li><img src="/home/bg-1920-1.jpg" alt="" /></li>' +
+				'<li><img src="/home/bg-1920-2.jpg" alt="" /></li>' +
+				'<li><img src="/home/bg-1920-3.jpg" alt="" /></li>' + 
+				'<li><img src="/home/bg-1920-4.jpg" alt="" /></li>'
 			);
 		}
 	}

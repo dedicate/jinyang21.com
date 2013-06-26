@@ -44,13 +44,18 @@ $(document).ready(function() {
 			"/res/brand-banner.jpg",
 			"/res/card-paper.png",
 			"/res/card-refl.png",
-			"/res/home-bg-1920-1.jpg",
-			"/res/home-bg-1920-2.jpg",
-			"/res/home-bg-1920-3.jpg",
 			"/res/loading.gif",
 			"/res/main-frame-bg.jpg",
 			"/res/mCSB_buttons.png",
-			"/res/text.png"
+			"/res/text.png",
+			"/home/bg-1920-1.jpg",
+			"/home/bg-1920-2.jpg",
+			"/home/bg-1920-3.jpg",
+			"/home/bg-1920-4.jpg",
+			"/home/bg-1440-1.jpg",
+			"/home/bg-1440-2.jpg",
+			"/home/bg-1440-3.jpg",
+			"/home/bg-1440-4.jpg"
 		], {
 			loaded: function(img, loaded, total) {
 				var percentage = (loaded/total) * 100 + '%';
