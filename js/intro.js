@@ -51,11 +51,13 @@ $(document).ready(function() {
 			"/home/bg-1920-1.jpg",
 			"/home/bg-1920-2.jpg",
 			"/home/bg-1920-3.jpg",
-			"/home/bg-1920-4.jpg",
+			"/home/bg-1920-4.jpg"  //,
+			/*
 			"/home/bg-1440-1.jpg",
 			"/home/bg-1440-2.jpg",
 			"/home/bg-1440-3.jpg",
 			"/home/bg-1440-4.jpg"
+			*/
 		], {
 			loaded: function(img, loaded, total) {
 				var percentage = (loaded/total) * 100 + '%';
@@ -93,12 +95,12 @@ $(document).ready(function() {
 					$('.anim2').animate({opacity:1}, 800, function() {
 						$('.anim3').animate({opacity:1}, 800, function() {
 							$('.anim4').animate({height: '40px', opacity: 1}, 500, function() {
-							
+								$('.anim5').animate({opacity:1}, 800, function() {
+								
+								});
 							});
 						});
-						$('.anim5').animate({opacity:1}, 800, function() {
-							
-						});
+						
 					});
 				});
 			}, 1000);
