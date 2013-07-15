@@ -14,7 +14,7 @@
 </div>
 
 <script>
-	setHomeImg();
+	//setHomeImg();
 	$(document).ready(function(){
 		setTimeout(function() {
 			$('.slider')._TMS({

@@ -13,7 +13,7 @@ img {border: none; margin: 0; padding: 0;}
 .loaderbar {position: relative; width: 100%; height: 4px; left: 0; top: 3px; z-index: 100;}
 .loaderbar .fluid {position: relative; width: 0px; height: 3px; background: white;}
 /*the general scroller*/
-.m-scroller {overflow: auto; height: 754px;}
+.m-scroller {overflow: auto; height: 560px;}
 /*body_head*/
 #body_head {width: 100%; overflow: hidden; padding: 0;}
 #body_head .logo {background: url('logo-gold.png') no-repeat; width: 120px; height: 48px; margin: 15px 20px 0px 40px; float: left;}
@@ -47,7 +47,7 @@ img {border: none; margin: 0; padding: 0;}
 .stage .frame-content .title .info {font-weight: normal;}
 .stage .frame-content .title .info .info-tag {font-size: 14px; font-weight: bold; padding: 10px 0;}
 .stage .frame-content .title .info .info-text {font-size: 12px; color: white;}
-.stage .frame-content .content {height: 704px; width: 805px; color: white; float: left; margin: 10px; padding: 0; overflow: hidden;}
+.stage .frame-content .content {height: 724px; width: 805px; color: white; float: left; margin: 10px; padding: 0; overflow: hidden;}
 
 .stage-full {width: 100%; height: 100%; margin:0; overflow: auto;}
 .stage-full .frame-content .title {color: #dab866; font-size: 20px; font-weight: bold; padding: 10px; text-align: right; width: 400px; margin: 55px 0;}
@@ -74,7 +74,7 @@ img {border: none; margin: 0; padding: 0;}
 .map-location-city li.selected {padding: 5px 20px 5px 0; border-bottom: 1px solid #fff;}
 .map-location-selector {float: left; height: 576px;}
 .map-location-selector .map-location {width: 230px; overflow: auto;}
-.map-container {width: 566px; height:750px; float: left; margin-left: 5px; border: 2px solid white;}
+.map-container {width: 566px; height:555px; float: left; margin-left: 5px; border: 2px solid white;}
 .map-location-list {margin: 0; padding: 0; list-style: none; }
 .map-location-list ul {}
 .map-location-list li {padding: 2px 4px; cursor: pointer; height: 80px; position: relative;}
