@@ -94,13 +94,13 @@ $(document).ready(function() {
 				$('.anim1').animate({opacity:1}, 1000, function() {
 					$('.anim2').animate({opacity:1}, 800, function() {
 						$('.anim3').animate({opacity:1}, 800, function() {
-							$('.anim4').animate({height: '40px', opacity: 1}, 500, function() {
-								$('.anim5').animate({opacity:1}, 800, function() {
-								
-								});
+							$('.anim4').animate({height: '40px'}, 500, function() {
+								$('.anim4').css('opacity': 1);
 							});
 						});
-						
+						$('.anim5').animate({opacity:1}, 800, function() {
+							
+						});
 					});
 				});
 			}, 1000);
