@@ -128,6 +128,7 @@ $(document).ready(function() {
 	}
 	setHomeGalleryFolder();
 	setHomeImg = function() {
+	/*
 		if($(window).height() < 720) {
 			$('.slider ul.items').empty().append(
 				'<li><img src="/home/bg-1440-1.jpg" alt="" /></li>' +
@@ -136,19 +137,20 @@ $(document).ready(function() {
 				'<li><img src="/home/bg-1440-4.jpg" alt="" /></li>'
 			);
 		} else {
+	*/
 			$('.slider ul.items').empty().append(
 				'<li><img src="/home/bg-1920-1.jpg" alt="" /></li>' +
 				'<li><img src="/home/bg-1920-2.jpg" alt="" /></li>' +
 				'<li><img src="/home/bg-1920-3.jpg" alt="" /></li>' + 
 				'<li><img src="/home/bg-1920-4.jpg" alt="" /></li>'
 			);
-		}
+	//	}
 	}
 	setHomeImg();
 	$(window).resize(function() {
 		repositionToolbar();
 		setHomeGalleryFolder();
-		setHomeImg();
+		//setHomeImg();
 	});
 	
 	var currentIndex = 0;
