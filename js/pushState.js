@@ -111,10 +111,10 @@ $(document).ready(function() {
 		bottomLink.css('top', bottomLinkTop);
 		
 		var windowHeight = $(window).height();
-		if(windowHeight > 660 && windowHeight < 760) {
+		if(windowHeight > 660 && windowHeight < 720) {
 			$('.body_main_frame').css('height', windowHeight - 125);
-		} else if(windowHeight > 760) {
-			$('.body_main_frame').css('height', 635);
+		} else if(windowHeight > 720) {
+			$('.body_main_frame').css('height', 595);
 		} else {
 			$('.body_main_frame').css('height', 535);
 		}
