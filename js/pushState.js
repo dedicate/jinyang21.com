@@ -146,7 +146,7 @@ $(document).ready(function() {
 			);
 	//	}
 	}
-	setHomeImg();
+	//setHomeImg();
 	$(window).resize(function() {
 		repositionToolbar();
 		setHomeGalleryFolder();
