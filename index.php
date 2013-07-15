@@ -178,24 +178,23 @@
 			</div>
 		</div>
 	</div>
-	
-	<script type="text/javascript" src="/js/jPlayer.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$("#jquery_jplayer_1").jPlayer({
-			ready: function() {
-				$(this).jPlayer("setMedia", {
-					m4a:"http://www.jplayer.org/audio/m4a/TSP-01-Cro_magnon_man.m4a",
-					oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
-				}).jPlayer("play");
-			},
-			loop: true,
-			swfPath: "/js/Jplayer.swf",
-			supplied: "m4a, oga",
-		});
-	});
-	</script>
 </div>
-
 </body>
+
+<script type="text/javascript" src="/js/jPlayer.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function() {
+			$(this).jPlayer("setMedia", {
+				m4a:"http://www.jplayer.org/audio/m4a/TSP-01-Cro_magnon_man.m4a",
+				oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
+			}).jPlayer("play");
+		},
+		loop: true,
+		swfPath: "/js/Jplayer.swf",
+		supplied: "m4a, oga",
+	});
+});
+</script>
 </html>

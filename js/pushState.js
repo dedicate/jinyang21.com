@@ -1,3 +1,10 @@
+$(document).ready(function() {
+	$('a').click(function() {
+		$(this).blur();
+	});
+});
+
+
 var anim
 
 $.cssHooks["backgroundPositionX"] = {
