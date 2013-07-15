@@ -136,30 +136,9 @@ $(document).ready(function() {
 		}
 	}
 	setHomeGalleryFolder();
-	setHomeImg = function() {
-	/*
-		if($(window).height() < 720) {
-			$('.slider ul.items').empty().append(
-				'<li><img src="/home/bg-1440-1.jpg" alt="" /></li>' +
-				'<li><img src="/home/bg-1440-2.jpg" alt="" /></li>' +
-				'<li><img src="/home/bg-1440-3.jpg" alt="" /></li>' + 
-				'<li><img src="/home/bg-1440-4.jpg" alt="" /></li>'
-			);
-		} else {
-	*/
-			$('.slider ul.items').empty().append(
-				'<li><img src="/home/bg-1920-1.jpg" alt="" /></li>' +
-				'<li><img src="/home/bg-1920-2.jpg" alt="" /></li>' +
-				'<li><img src="/home/bg-1920-3.jpg" alt="" /></li>' + 
-				'<li><img src="/home/bg-1920-4.jpg" alt="" /></li>'
-			);
-	//	}
-	}
-	//setHomeImg();
 	$(window).resize(function() {
 		repositionToolbar();
 		setHomeGalleryFolder();
-		//setHomeImg();
 	});
 	
 	var currentIndex = 0;
@@ -179,10 +158,9 @@ $(document).ready(function() {
 	});
 	liBg.stop().css({'left':liWidth * (currentIndex)});
 	tbUl.mouseenter(function() {
-		//$(tbLink[currentIndex]).stop().animate({'color':'#ffffff'}, 500);
+	
 	}).mouseleave(function() {
 		liBg.stop().animate({'left':liWidth * (currentIndex)}, 500);
-		//$(tbLink[currentIndex]).stop().animate({'color':'#000000'}, 500);
 	});
 	
 	/***********************/
