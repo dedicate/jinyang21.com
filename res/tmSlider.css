@@ -11,7 +11,6 @@
 .prev {position:absolute; top:504px ; left:90px; z-index:111; display:inline-block; width:22px; height:43px; background:url(../images/prev.gif) 0 0 no-repeat;}
 .prev:hover {background-position:0 bottom;}
 .next {position:absolute; top:504px ; right:90px; z-index:111; display:inline-block; width:22px; height:43px; background:url(../images/next.gif) 0 0 no-repeat;}
-.next:hover {background-position:0 bottom;}
 
 .banner{position:absolute; left:162px; top:465px; width:940px; background:#000; overflow:hidden; padding:10px 0 0px 0;}
 .banner p  {width:740px; float:left;}
