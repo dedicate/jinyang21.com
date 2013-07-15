@@ -119,7 +119,7 @@
 			<div class='anim1 init-hide text-bg'></div>
 			<div class='anim2 init-hide'>Summer Collection 2013</div>
 			<div class='anim3 init-hide upper-dec text-bg'></div>
-			<div class='anim4 init-hide'><a id='start' href='/home.htm'>Invited&nbsp;&nbsp;</a></div>
+			<div class='anim4 init-hide'><a id='start' style='display: none;' href='/home.htm'>Invited&nbsp;&nbsp;</a></div>
 			<div class='anim5 init-hide lower-dec text-bg'></div>
 		</div>
 		<div class='card-refl init-hide'></div>

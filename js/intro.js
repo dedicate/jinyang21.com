@@ -96,6 +96,7 @@ $(document).ready(function() {
 						$('.anim3').animate({opacity:1}, 800, function() {
 							$('.anim4').animate({height: '40px'}, 500, function() {
 								$('.anim4').css('opacity', 1);
+								$('#start').css('display', 'block');
 							});
 						});
 						$('.anim5').animate({opacity:1}, 800, function() {
