@@ -62,7 +62,7 @@ img {border: none; margin: 0; padding: 0;}
 /*home*/
 #home-bg {width: 100%; height: 100%; margin: 0; padding: 0; position: absolute; list-style: none;}
 /*branding*/
-.frame-content .content .brand-banner {float: left; margin: 75px 15px 0 15px; background: url('brand-banner.jpg') no-repeat 0 35px; width: 300px; height: 300px; border: 2px solid white;}
+.frame-content .content .brand-banner {float: left; margin: 75px 15px 0 15px; background: url('brand-banner.jpg') no-repeat 0 0px; width: 300px; height: 300px; border: 2px solid white;}
 .frame-content .content .brand-text {float: left; margin: 15px 10px; padding-top: 15px; font-weight: bold; line-height: 2em; width: 440px;}
 .frame-content .logo-mini {align:bottom;}
 /*collection*/
