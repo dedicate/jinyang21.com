@@ -167,13 +167,16 @@
 	
 	<div id="body_tail" class='init-hide'>
 		<div class="body_tail">
+			<div class='jp-player'>
+				<div id="jquery_jplayer_1"></div>
+				<div id='jp-button' class='pause' data-status='play'></div>
+			</div>
 			<div class='left-links'>
 				<a href='/join.htm'>加入我们</a>			
 				<a target='_blank' class='out-link' href='http://e.weibo.com/JY21style'><img src='/res/weibo_logo_mini.png' style='height: 12px;' />&nbsp;官方微博</a>
 				<a target='_blank' class='out-link' href='http://thebeautygroup.com'>The Beauty Group</a>
 			</div>
 			<div class='right-text'>
-				<div id="jquery_jplayer_1"></div>
 				2013 JY21 ALL RIGHTS RESERVED
 			</div>
 		</div>
@@ -195,6 +198,18 @@ $(document).ready(function(){
 		swfPath: "/js/Jplayer.swf",
 		supplied: "m4a, oga",
 	});
+});
+
+$('#jp-button').click(function() {
+	if($(this).data('status') == 'play') {
+		$("#jquery_jplayer_1").jPlayer("pause");
+		$(this).data('status', 'pause');
+		$(this).attr('class', 'play');
+	} else {
+		$("#jquery_jplayer_1").jPlayer("play");
+		$(this).data('status', 'play');
+		$(this).attr('class', 'pause');
+	}
 });
 </script>
 </html>
