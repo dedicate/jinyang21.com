@@ -27,14 +27,12 @@ if(isset($_GET['getRefresh'])) {
 			<div class='news-list m-scroller'><ul>
 			<?php
 				$cursor = $articleCollection->find();
-				$cursor->sort(array('created' => -1));
+				$cursor->sort(array('publishDate' => -1));
 				$currentMonth = "";
 				$blogMonth = "";
 				foreach ($cursor as $doc) {
-					$str = $doc['created'];
-					if (($timestamp = strtotime($str)) !== false) {
-						$blogMonth = date("M", $timestamp);
-					}
+					$str = $doc['publishDate']->sec;
+					$blogMonth = date("M", $str);
 					if($blogMonth != $currentMonth) {
 						$currentMonth = $blogMonth;
 			?>
@@ -45,7 +43,7 @@ if(isset($_GET['getRefresh'])) {
 				<li class='item'>
 					<a href='/blog/<?php echo $doc['_id']?>' class='inner-content-refresh'>
 						<img class='introicon' src='http://misc.fucms.com/public-misc/516246370194b7c469000017/<?php echo $doc['introicon'] ?>'/>
-						<div class='date'><?php echo $doc['created'] ?></div>
+						<div class='date'><?php echo date("M d", $str); ?></div>
 						<div class='label'><?php echo $doc['label'] ?></div>
 					</a>
 					<div class='next'></div>
