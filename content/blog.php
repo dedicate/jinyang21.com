@@ -4,6 +4,7 @@ $db = $m->cms_419;
 $articleCollection = $db->article;
 
 $blog = $articleCollection->findOne(array('_id' => new MongoId($blogId)));
+$timestamp = $blog['publishDate']->sec;
 
 if(isset($_GET['getRefresh'])) {
 	$getRefresh = true;
@@ -25,7 +26,7 @@ if(isset($_GET['getRefresh'])) {
 			<div class='blog m-scroller'>
 				<a href='/news.htm' class='inner-content-refresh back'>返回列表</a>
 				<div class='label'><?php echo $blog['label']?></div>
-				<div class='date'><?php echo $blog['created']?></div>
+				<div class='date'><?php echo date("M d", $timestamp) ?></div>
 				<div class='fulltext'><?php echo $blog['fulltext']?></div>
 			</div>
 			<script type='text/javascript'>

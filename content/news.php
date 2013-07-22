@@ -43,7 +43,7 @@ if(isset($_GET['getRefresh'])) {
 				<li class='item'>
 					<a href='/blog/<?php echo $doc['_id']?>' class='inner-content-refresh'>
 						<img class='introicon' src='http://misc.fucms.com/public-misc/516246370194b7c469000017/<?php echo $doc['introicon'] ?>'/>
-						<div class='date'><?php echo date("M d", $str); ?></div>
+						<div class='date'><?php echo date("M d", $str) ?></div>
 						<div class='label'><?php echo $doc['label'] ?></div>
 					</a>
 					<div class='next'></div>
