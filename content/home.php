@@ -5,8 +5,6 @@
 				<li>
 				<li><img src="/home/bg-1920-1.jpg" alt="" /></li>
 				<li><img src="/home/bg-1920-2.jpg" alt="" /></li>
-				<li><img src="/home/bg-1920-3.jpg" alt="" /></li>
-				<li><img src="/home/bg-1920-4.jpg" alt="" /></li>
 				</li>
 			</ul>
 		</div>

@@ -49,9 +49,7 @@ $(document).ready(function() {
 			"/res/mCSB_buttons.png",
 			"/res/text.png",
 			"/home/bg-1920-1.jpg",
-			"/home/bg-1920-2.jpg",
-			"/home/bg-1920-3.jpg",
-			"/home/bg-1920-4.jpg"
+			"/home/bg-1920-2.jpg"
 		], {
 			loaded: function(img, loaded, total) {
 				var percentage = (loaded/total) * 100 + '%';
