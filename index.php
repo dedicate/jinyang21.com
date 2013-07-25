@@ -190,7 +190,7 @@ $(document).ready(function(){
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function() {
 			$(this).jPlayer("setMedia", {
-				mp3:"http://misc.fucms.com/public-misc/516246370194b7c469000017/41f9080ee15459fd23ad4208408d7051.mp3"
+				mp3:"http://misc.fucms.com/public-misc/516246370194b7c469000017/intro.mp3"
 			}).jPlayer("play");
 		},
 		loop: true,
