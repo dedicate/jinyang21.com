@@ -75,7 +75,7 @@ img {border: none; margin: 0; padding: 0;}
 .collection-gallery ul.gallery li.seasonal-intro {color: white;}
 .collection-gallery .mCSB_horizontal.mCustomScrollBox  .mCSB_scrollTools {top: 448px;}
 /*location*/
-.map-location-city li {margin: 4px 0 4px 80px; padding: 5px 5px 5px 15px; border-bottom: 1px solid transparent; cursor: pointer;}
+.map-location-city li {margin: 3px 0 2px 80px; padding: 2px 5px 2px 15px; border-bottom: 1px solid transparent; cursor: pointer;}
 .map-location-city li.selected {padding: 5px 20px 5px 0; border-bottom: 1px solid #fff;}
 .map-location-selector {float: left; height: 576px;}
 .map-location-selector .map-location {width: 230px; overflow: auto;}
