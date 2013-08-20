@@ -18,8 +18,8 @@
 </div>
 
 <script>
-var galleryFolder = '13ss';
-var imagesToLoad = 16;
+var galleryFolder = '13aw';
+var imagesToLoad = 20;
 var currentImageLoadedIndex = 0;
 var imageLoadPerpage = 5;
 var moreImageToLoad = true;
