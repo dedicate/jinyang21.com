@@ -1,7 +1,7 @@
 <div class='stage-full'>
 	<div class='frame-content'>
 		<div class='title'>
-			SPRING SUMMER 2013 COLLECTION
+			AUTUMN WINTER 2013 COLLECTION
 		</div>
 		<div class='content'>
 			<div class='collection-gallery'>
