@@ -40,7 +40,6 @@ $locationArr[$cityId] = $cityArr;
 						<li data-cityname='500100'>重庆</li>
 						<li data-cityname='510100'>成都</li>
 						<li data-cityname='370100'>济南</li>
-						<li data-cityname='441900'>东莞</li>
 						<li data-cityname='440300'>深圳</li>
 						<li data-cityname='320200'>无锡</li>
 						<li data-cityname='320400'>常州</li>

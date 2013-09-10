@@ -118,12 +118,10 @@ $(document).ready(function() {
 		bottomLink.css('top', bottomLinkTop);
 		
 		var windowHeight = $(window).height();
-		if(windowHeight > 660 && windowHeight < 710) {
+		if(windowHeight < 910) {
 			$('.body_main_frame').css('height', windowHeight - 125);
-		} else if(windowHeight > 710) {
-			$('.body_main_frame').css('height', 585);
-		} else {
-			$('.body_main_frame').css('height', 535);
+		} else if(windowHeight >= 910) {
+			$('.body_main_frame').css('height', 750);
 		}
 		$('.logo-bg').css('top', windowHeight/2 - 60);
 	}
