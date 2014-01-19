@@ -1,9 +1,11 @@
 <div id='home-bg'>
 	<div id='maximage-holder' style='width: 100%; height: 100%;'>
 		<div id="maximage" style='z-index: 99;'>
-			<img src="/home/1.jpg" alt="" />
-			<img src="/home/2.jpg" alt="" />
-			<img src="/home/3.jpg" alt="" />
+			<img src="<?php echo FILE_PATH?>/h/1.jpg" alt="" />
+			<img src="<?php echo FILE_PATH?>/h/2.jpg" alt="" />
+			<img src="<?php echo FILE_PATH?>/h/3.jpg" alt="" />
+			<img src="<?php echo FILE_PATH?>/h/4.jpg" alt="" />
+			<img src="<?php echo FILE_PATH?>/h/5.jpg" alt="" />
 		</div>
 	</div>
 </div>
@@ -32,26 +34,3 @@
 		});
 	});
 </script>
-
-
-
-
-
-
-
-
-<!-- script type="text/javascript" charset="utf-8">
-
-	$(function(){
-		// Trigger maximage
-		//jQuery('#maximage').maximage();
-		$('#maximage').maximage({
-			cycleOptions: {
-				fx: 'fade',
-				speed: 1000, // Set the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
-				timeout: 5000
-			},
-			fillElement: '#maximage-holder'
-		});
-	});
-</script -->

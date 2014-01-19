@@ -1,7 +1,7 @@
 <div class='stage-full'>
 	<div class='frame-content'>
 		<div class='title'>
-			AUTUMN WINTER 2013 COLLECTION
+			SPRING SUMMER 2014 COLLECTION
 		</div>
 		<div class='content'>
 			<div class='collection-gallery'>
@@ -18,10 +18,10 @@
 </div>
 
 <script>
-var galleryFolder = '13aw';
-var imagesToLoad = 20;
+var galleryFolder = 'ss2014';
+var imagesToLoad = 15;
 var currentImageLoadedIndex = 0;
-var imageLoadPerpage = 5;
+var imageLoadPerpage = 8;
 var moreImageToLoad = true;
 
 $(document).ready(function() {
@@ -43,8 +43,8 @@ $(document).ready(function() {
 	for(var i = 1; i <= imageLoadPerpage; i++) {
 		currentImageLoadedIndex++;
 		var liTag = "<li>" + 
-			"<a class='js-link' rel='lightbox[" + galleryFolder + "]' href='#' gallery='" + galleryFolder + "' pic='" + currentImageLoadedIndex + "'>" + 
-			"<img src='/image/" + galleryFolder + "/" + currentImageLoadedIndex + ".jpg'>" + 
+			"<a class='js-link' data-lightbox='collection-set' href='<?php echo FILE_PATH?>/" + galleryFolder + "/700/" + currentImageLoadedIndex + ".jpg'>" +
+			"<img src='<?php echo FILE_PATH?>/" + galleryFolder + "/" + currentImageLoadedIndex + ".jpg'>" + 
 			"</a></li>";
 		$(".collection-gallery ul.gallery .gallery-loading").before(liTag);
 	}
@@ -58,8 +58,8 @@ $(document).ready(function() {
 			for(var i = 1; i <= imageLoadPerpage; i++) {
 				currentImageLoadedIndex++;
 				var liTag = "<li>" + 
-				"<a class='js-link' rel='lightbox[" + galleryFolder + "]' href='#' gallery='" + galleryFolder + "' pic='" + currentImageLoadedIndex + "'>" + 
-				"<img src='/image/" + galleryFolder + "/" + currentImageLoadedIndex + ".jpg'>" + 
+				"<a class='js-link' data-lightbox='collection-set' href='<?php echo FILE_PATH?>/" + galleryFolder + "/700/" + currentImageLoadedIndex + ".jpg' >" + 
+				"<img src='<?php echo FILE_PATH?>/" + galleryFolder + "/" + currentImageLoadedIndex + ".jpg'>" + 
 				"</a></li>";
 				$(".collection-gallery ul.gallery .gallery-loading").before(liTag);
 				if(currentImageLoadedIndex >= imagesToLoad) {

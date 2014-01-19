@@ -2,6 +2,8 @@
 	date_default_timezone_set('UTC');
 	include 'content/database.php';
 
+	define('FILE_PATH', 'http://misc.fucms.com/dedicated/jy21');
+	
 	define('IS_AJAX', isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
 	define('BASE_PATH', dirname(__FILE__));
 	$url = $_SERVER["REQUEST_URI"];
@@ -134,7 +136,7 @@
 	<div id='card'>
 		<div class='card-paper init-hide'>
 			<div class='anim1 init-hide text-bg'></div>
-			<div class='anim2 init-hide'>Autumn Collection 2013</div>
+			<div class='anim2 init-hide'>Summer Collection 2014</div>
 			<div class='anim3 init-hide upper-dec text-bg'></div>
 			<div class='anim4 init-hide'><a id='start' style='display: none;' href='/home.htm'>Invited&nbsp;&nbsp;</a></div>
 			<div class='anim5 init-hide lower-dec text-bg'></div>
