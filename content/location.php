@@ -69,6 +69,7 @@ $locationArr[$cityId] = $cityArr;
 	</div>
 </div>
 <script type="text/javascript">
+/*
 	var latLng = new google.maps.LatLng(34.263915914326944, 108.96358586847782);
 	var mapOptions = {
 		center: latLng,
@@ -85,6 +86,7 @@ $locationArr[$cityId] = $cityArr;
 		title: "JY21 Shop"
 	});
 	marker.setMap(map);
+*/
 	/*store locations*/
 	var stores = <?php echo json_encode($locationArr) ?>
 	
@@ -127,11 +129,13 @@ $locationArr[$cityId] = $cityArr;
 			storeLi.data("lat", obj['lat']);
 			storeLi.data("lng", obj['lon']);
 			storeLi.click(function() {
+				/*
 				var latVal = $(this).data('lat');
 				var lngVal = $(this).data('lng');
 				var latLng = new google.maps.LatLng(latVal, lngVal);
 				map.setCenter(latLng);
 				marker.setPosition(latLng);
+				*/
 			});
 			storeLi.mouseenter(function() {
 				$(this).css({'background': '#ddd', 'color': '#111'});

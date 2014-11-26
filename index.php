@@ -80,7 +80,7 @@
 <!-- script type="text/javascript" src="/js/jquery.chosen.min.js"></script -->
 <script type="text/javascript" src="/js/cufon-yui-1.09i.js"></script>
 <script type="text/javascript" src="/font/Embassy_500.font.js"></script>
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA25sVpx-7yjUigqlO85LIisycEHdUdTAE&sensor=false"></script>
+<!-- script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA25sVpx-7yjUigqlO85LIisycEHdUdTAE&sensor=false"></script -->
 <script type="text/javascript" src="/js/jquery-ui-1.10.3.custom.min.js"></script>
 <script type="text/javascript" src="/js/pushState.js"></script>
 
@@ -136,7 +136,7 @@
 	<div id='card'>
 		<div class='card-paper init-hide'>
 			<div class='anim1 init-hide text-bg'></div>
-			<div class='anim2 init-hide'>Summer Collection 2014</div>
+			<div class='anim2 init-hide'>Winter Collection 2014</div>
 			<div class='anim3 init-hide upper-dec text-bg'></div>
 			<div class='anim4 init-hide'><a id='start' style='display: none;' href='/home.htm'>Invited&nbsp;&nbsp;</a></div>
 			<div class='anim5 init-hide lower-dec text-bg'></div>
@@ -164,12 +164,12 @@
 					<li class="collection">
 						<a class="<?php echo $selectedIndex == 3 ? 'selected' : ''?>" href="/collection.htm"><div class='t'>系列展示 <br /> <span class='en'>COLLECTION</span></div></a>
 					</li>
-					<!--li class="location">
+					<li class="location">
 						<a class="<?php echo $selectedIndex == 4 ? 'selected' : ''?>" href="/location.htm"><div class='t'>门店位置 <br /> <span class='en'>STORE LOCATION</span></div></a>
 					</li>
 					<li class="news">
 						<a class="<?php echo $selectedIndex == 5 ? 'selected' : ''?>" href="/news.htm"><div class='t'>JY21事件<br /> <span class='en'>JY21 NEWS</span></div></a>
-					</li -->
+					</li>
 				</ul>
 				<div class="clear"></div>
 			</div>
