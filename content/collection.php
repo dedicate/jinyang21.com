@@ -18,7 +18,7 @@
 </div>
 
 <script>
-var galleryFolder = 'aw2015';
+var galleryFolder = 'aw2014';
 var imagesToLoad = 20;
 var currentImageLoadedIndex = 0;
 var imageLoadPerpage = 8;
