@@ -164,12 +164,12 @@
 					<li class="collection">
 						<a class="<?php echo $selectedIndex == 3 ? 'selected' : ''?>" href="/collection.htm"><div class='t'>系列展示 <br /> <span class='en'>COLLECTION</span></div></a>
 					</li>
-					<li class="location">
+					<!--li class="location">
 						<a class="<?php echo $selectedIndex == 4 ? 'selected' : ''?>" href="/location.htm"><div class='t'>门店位置 <br /> <span class='en'>STORE LOCATION</span></div></a>
 					</li>
 					<li class="news">
 						<a class="<?php echo $selectedIndex == 5 ? 'selected' : ''?>" href="/news.htm"><div class='t'>JY21事件<br /> <span class='en'>JY21 NEWS</span></div></a>
-					</li>
+					</li -->
 				</ul>
 				<div class="clear"></div>
 			</div>

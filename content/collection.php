@@ -1,7 +1,7 @@
 <div class='stage-full'>
 	<div class='frame-content'>
 		<div class='title'>
-			SPRING SUMMER 2014 COLLECTION
+			AUTUMN WINTER 2014 COLLECTION
 		</div>
 		<div class='content'>
 			<div class='collection-gallery'>
@@ -18,8 +18,8 @@
 </div>
 
 <script>
-var galleryFolder = 'ss2014';
-var imagesToLoad = 15;
+var galleryFolder = 'aw2015';
+var imagesToLoad = 20;
 var currentImageLoadedIndex = 0;
 var imageLoadPerpage = 8;
 var moreImageToLoad = true;
