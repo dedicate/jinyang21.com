@@ -18,7 +18,7 @@
 </div>
 
 <script>
-var galleryFolder = 'SS2015';
+var galleryFolder = 'ss2015';
 var imagesToLoad = 26;
 var currentImageLoadedIndex = 0;
 var imageLoadPerpage = 8;
