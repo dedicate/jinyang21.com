@@ -2,6 +2,7 @@
 	<div id='maximage-holder' style='width: 100%; height: 100%;'>
 		<div id="maximage" style='z-index: 99;'>
 			<img src="<?php echo FILE_PATH?>/h/ss2015-1.jpg" alt="" />
+			<img src="<?php echo FILE_PATH?>/h/ss2015-1.jpg" alt="" />
 		</div>
 	</div>
 </div>
