@@ -1,6 +1,6 @@
 <?php 
-$m = new MongoClient('mongodb://craftgavin:whothirstformagic?@419.bee.fucms.com');
-$db = $m->cms_419;
+$m = new MongoClient('mongodb://craftgavin:whothirstformagic?@54.248.242.103');
+$db = $m->cms_16;
 $articleCollection = $db->article;
 if(isset($_GET['newsId'])) {
 	$newsId = $_GET['newsId'];
@@ -27,7 +27,7 @@ if(isset($_GET['getRefresh'])) {
 			<div class='news-list m-scroller'><ul>
 			<?php
 				$cursor = $articleCollection->find();
-				$cursor->sort(array('publishDate' => -1));
+				$cursor->sort(array('_id' => -1));
 				$currentMonth = "";
 				$blogMonth = "";
 				foreach ($cursor as $doc) {
