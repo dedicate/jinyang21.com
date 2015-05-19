@@ -14,9 +14,14 @@
 						<li>电话：021-60908080</li>
 						<li>传真：021-60908086</li>
 						<li>
-							<img style='display: block; width: 120px; float: right; margin-top: 25px;' src='/res/wechat-qr.jpg' />
+							<img style='display: block; width: 120px; float: right; margin-top: 25px;' src='/res/weibo-qr.jpg' />
 							<br style='clear: both;'/>
 							<div style='color: #777;'>微博号：JY21女装</div>
+						</li>
+						<li>
+							<img style='display: block; width: 120px; float: right; margin-top: 25px;' src='/res/wechat-qr.jpg' />
+							<br style='clear: both;'/>
+							<div style='color: #777;'>微信号：JY21</div>
 						</li>
 					</ul>
 				</div>
