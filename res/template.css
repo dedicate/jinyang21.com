@@ -29,7 +29,7 @@ img {border: none; margin: 0; padding: 0;}
 #body_head .navi-main li.story div.t {width: 70px;}
 #body_head .navi-main li.collection div.t {width: 75px;}
 #body_head .navi-main li.location div.t {width: 125px;}
-#body_head .navi-main li.news  div.t {width: 75px;}
+#body_head .navi-main li.news  div.t {width: 125px;}
 
 /*body_tail*/
 #body_tail {height: 22px; width: 100%; overflow: hidden; padding: 0; background: black; color: white; position: absolute; font-size: 10px;}
@@ -51,7 +51,7 @@ img {border: none; margin: 0; padding: 0;}
 .stage .frame-content .title .sub {font-size: 36px;}
 .stage .frame-content .title .info {font-weight: normal;}
 .stage .frame-content .title .info .info-tag {font-size: 14px; font-weight: bold; padding: 10px 0;}
-.stage .frame-content .title .info .info-text {font-size: 12px; color: white;}
+.stage .frame-content .title .info .info-text {font-size: 12px; color: white; line-height: 1.8em;}
 .stage .frame-content .content {height: 724px; width: 805px; color: white; float: left; margin: 10px; padding: 0; overflow: hidden;}
 
 .stage-full {width: 100%; height: 100%; margin:0; overflow: auto;}
@@ -95,6 +95,8 @@ img {border: none; margin: 0; padding: 0;}
 .news-list .date {padding: 5px; float: left; width: 350px; color: #999;}
 .news-list .label {font-size: 14px; font-weight: bold; padding: 0 5px; float: left;}
 .news-list .next {background: url('next.png') no-repeat; width: 30px; height: 50px; position: absolute; top:70px; left: 800px;}
+/*contact*/
+ 
 /*blog*/
 .blog .back {padding: 5px; width: 350px; color: #999; display: block;}
 .blog .label {font-size: 16px; font-weight: bold; padding: 0 5px; color: #dab866;}

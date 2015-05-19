@@ -35,6 +35,10 @@
 			$includeContent = BASE_PATH . '/content/join.php';
 			$selectedIndex = 1;
 			break;
+		case '/contact.htm':
+			$includeContent = BASE_PATH . '/content/contact.php';
+			$selectedIndex = 5;
+			break;
 		default:
 			if(substr($url, 0, 5) == '/blog') {
 				$includeContent = BASE_PATH . '/content/blog.php';
@@ -168,7 +172,7 @@
 						<a class="<?php echo $selectedIndex == 4 ? 'selected' : ''?>" href="/location.htm"><div class='t'>门店位置 <br /> <span class='en'>STORE LOCATION</span></div></a>
 					</li>
 					<li class="news">
-						<a class="<?php echo $selectedIndex == 5 ? 'selected' : ''?>" href="/news.htm"><div class='t'>JY21事件<br /> <span class='en'>JY21 NEWS</span></div></a>
+						<a class="<?php echo $selectedIndex == 5 ? 'selected' : ''?>" href="/contact.htm"><div class='t'>联系我们<br /> <span class='en'>CONTACT US</span></div></a>
 					</li>
 				</ul>
 				<div class="clear"></div>
@@ -209,7 +213,7 @@ $(document).ready(function(){
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function() {
 			$(this).jPlayer("setMedia", {
-				mp3:"http://misc.fucms.com/public-misc/516246370194b7c469000017/intro.mp3"
+				mp3:"http://misc.fucms.com/dedicated/jy21/cmar.mp3"
 			}).jPlayer("play");
 		},
 		loop: true,
