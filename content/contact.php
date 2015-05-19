@@ -16,7 +16,7 @@
 						<li>
 							<img style='display: block; width: 120px; float: right; margin-top: 25px;' src='/res/wechat-qr.jpg' />
 							<br style='clear: both;'/>
-							<div style='color: #777;'>微信号：JY21女装</div>
+							<div style='color: #777;'>微博号：JY21女装</div>
 						</li>
 					</ul>
 				</div>
